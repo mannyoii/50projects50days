@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: steelblue;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+.box {
+  background-color: #fff;
+  width: 150px;
+  height: 150px;
+  border: solid 3px #000;
+  margin: 10px;
+}
+
+/* .box:last-child {
+  margin-left: 44px;
+} */
+
+.fill {
+  background-image: url(https://source.unsplash.com/random/150x150);
+  /* background-size: cover; */
+  width: 145px;
+  height: 145px;
+  cursor: pointer;
+}
+
+.hold {
+  border: solid 5px #ccc;
+}
+
+.hovered {
+  background-color: #333;
+  border: 3px dashed #fff;
+}
